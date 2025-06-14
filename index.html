@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLEXBOX SPIELPLATZ</title>
         <style>
-            .flex-container {
-              display: flex; 
-}
 
+           .flex-container {                          
+              display: flex; 
+              height: 200px;
+              width: auto;
+              flex-direction: row; 
+              /* flex-direction: row; Lässt die Flexbox Horizontal nebeneinander reihen, flex-direction:column; würde die Boxen untereinander reihen*/
+            }
 /* this selector selects all divs inside of .flex-container */
             .flex-container div {
               background: peachpuff;
@@ -16,8 +20,18 @@
               height: 100px;
               flex: 1; 
               margin: 1px;
+              padding: 0px;
               
+             
             }  
+            .flex-container .two {
+                flex: 2 1 0%;
+            }
+            .flex-container .one {
+                flex: 1 1 0%;
+                padding: 0px;
+            }
+          
         </style>
 </head>
 <body>
